@@ -13,14 +13,17 @@ struct Fruit {
     color: (i32, i32, i32),
 }
 
-pub fn demo(){
+pub fn demo() {
     println!("Running structure demo!");
-    let apple = Fruit{
+    let apple = Fruit {
         species: Species::Apple,
         name: "Red Apple".to_string(),
-        color: (255, 0, 0)
+        color: (255, 0, 0),
     };
 
-    println!("My fruit, {} is a {:?} and is colored {:?}", apple.name, apple.species, apple.color);
+    println!("My fruit, {} is a {:?} and is colored {:?}",
+             apple.name,
+             apple.species,
+             apple.color);
     println!("Structure demo done!");
 }
