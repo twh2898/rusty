@@ -1,10 +1,10 @@
 mod method;
-mod structure;
 mod types;
+mod structure;
 
 fn main() {
     println!("Hello World!");
-    method::demo();
     structure::demo();
     types::demo();
+    method::demo();
 }
