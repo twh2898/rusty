@@ -16,6 +16,7 @@ pub fn demo() {
     println!("{name} {}", 1, name = 2); // => 2 1
     println!("{a} {c} {b}", a = 'a', b = 'b', c = 3);   // => a c 3
     // println!("{0:X} {0:o}", 10); //Invalid, can't refear to an argument as multiple types
+    println!("{0:02} {0:3}\n^~ ^~~", 3);
     let fmt_num = format!("{:.*}", 2, 1.234567);
     assert_eq!("1.23", fmt_num);
     log!("Hello World form Log");
